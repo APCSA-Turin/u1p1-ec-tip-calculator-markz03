@@ -1,4 +1,5 @@
 /*
+I learned how to round with this website: https://stackoverflow.com/questions/11701399/round-up-to-2-decimal-places-in-java
 I learned how to use ! to negate equals -> not equal https://stackoverflow.com/questions/16995809/opposite-of-java-equals-method,
  */
 
@@ -32,11 +33,11 @@ public class ExtraCredit {
         result.append("Items ordered:\n");
         result.append(items);
 
-
         return result.toString();
     }
                                    
     public static void main(String[] args) {
+        // declare and initialize variables (parameters)
         int people = 6;
         int percent = 25;
         double cost = 52.27;
@@ -50,7 +51,7 @@ public class ExtraCredit {
             System.out.print("Enter an item name or type '-1' to finish: ");
             itemsOrdered = scan.nextLine();
 
-            if (!itemsOrdered.equals("-1")) { // runs whilee user input isn't -1, so the items string won't end with -1
+            if (!itemsOrdered.equals("-1")) { // runs if user input isn't -1, so the items string won't end with -1
                 items += "\n" + itemsOrdered + "\n";
             }
         }
