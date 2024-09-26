@@ -52,7 +52,7 @@ public class ExtraCredit {
             itemsOrdered = scan.nextLine();
 
             if (!itemsOrdered.equals("-1")) { // runs if user input isn't -1, so the items string won't end with -1
-                items += "\n" + itemsOrdered + "\n";
+                items += itemsOrdered + "\n";
             }
         }
         scan.close();
